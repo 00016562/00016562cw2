@@ -1,0 +1,18 @@
+extends main 
+block content
+    .container
+        h1.text-center.mt-5 Completed Todos' List
+        .row.justify-content-center.mt-3
+            .col-md-6
+                ul#taskList.list-group
+                    each toDo in toDos
+                        li.card
+                            .card-body
+                                h4 To do
+                                h5 Task: #{toDo.task}
+                                .d-flex.gap-2.mb-3
+                                    label(for="taskCheck") Status:
+                                    input(type="checkbox" checked=toDo.done)#taskCheck
+                                p Created at: #{toDo.createdAt}
+                                p Deadline: #{toDo.deadline}
+                                p Completed at: #{toDo.finishedAt}

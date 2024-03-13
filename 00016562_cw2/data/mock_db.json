@@ -1,0 +1,44 @@
+{
+  "toDos": [
+    {
+      "id": 14147148917944,
+      "task": "Bring kids from school",
+      "done": true,
+      "deadline": "2024-03-11",
+      "createdAt": "2024-03-11",
+      "finishedAt": "2024-03-11"
+    },
+    {
+      "id": 14147148917955,
+      "task": "Clean the room",
+      "done": true,
+      "deadline": "2024-03-14",
+      "createdAt": "2024-03-11",
+      "finishedAt": "2024-03-12"
+    },
+    {
+      "id": 14147148917932,
+      "task": "Clean the bathroom",
+      "done": true,
+      "deadline": "2024-03-14",
+      "createdAt": "2024-03-11",
+      "finishedAt": "2024-03-12"
+    },
+    {
+      "id": 1710246702440,
+      "task": "Go to work",
+      "done": true,
+      "deadline": "2024-03-13",
+      "createdAt": "2024-03-12",
+      "finishedAt": "2024-03-12"
+    },
+    {
+      "id": 1710273350041,
+      "task": "Do the dishes",
+      "done": true,
+      "deadline": "2024-03-14",
+      "createdAt": "2024-03-12",
+      "finishedAt": "2024-03-12"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+extends main 
+block content
+    script(src="/scripts/create-update-del/index.js") 
+    .container
+      h1.text-center.mt-5 To-Do List
+      .row.justify-content-center.mt-3
+        .col-md-6
+          form.create-form
+            .form-group.mb-3
+              label(for="taskInput") Add Task:
+              input#taskInput.form-control(type="text", placeholder="Enter task")
+            .form-group.mb-3.d-flex.flex-column
+              label(for="taskDate") Set a Deadline:
+              input#taskDate.form-control(type="date")
+            button.btn.btn-success.btn-block(type="submit").w-100 Add
+          hr
+          ul#taskList.list-group
+            each toDo in toDos
+                li.card.mb-3
+                    .card-body
+                        h4 To do
+                        form.update-form
+                          .form-group.mb-3
+                              label(for="taskName") Task:
+                              input#taskName(type="text" value=toDo.task).rounded.form-control
+                          .d-flex.gap-2.mb-3
+                              label(for="taskCheck") Status:
+                              input(type="checkbox" checked=toDo.done)#taskCheck
+                          .form-group.mb-3
+                              label(for="taskDeadline") Deadline:
+                              input(type="date" value=toDo.deadline)#taskDeadline.form-control
+                          p CreatedAt: #{toDo.createdAt}
+                          .btn-group.d-flex.gap-4
+                              button(type="submit").btn.btn-primary.rounded Update
+                              button(type="button").btn.btn-danger.rounded.delete-btn Delete
