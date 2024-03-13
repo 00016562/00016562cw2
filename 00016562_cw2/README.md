@@ -11,10 +11,7 @@ Here is the folder structure I used for the project:
 /views => pug files, e.g pages
 /index.js => main file
 
-GitHub Repo Link: [Placeholder for GitHub repo link]
-
-Deployed Version Link: [Placeholder for deployed version link]
-
+GitHub Repo Link: [https://github.com/00016562/00016562cw2]
 I used the following technologies to buil this project:
 
 Frontend:
